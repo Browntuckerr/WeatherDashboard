@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tucker's Weather Dashboard</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="header">
+        <span class="navbar-brand mx-auto">Weather Dashboard</span>
+      
+    </nav>  
+
+    <div class='container'>
+        <div class='row'>
+    
+          <div class='col-md-3'>
+    
+            <div class='card search-section'>
+              
+              <div class='card-body'>
+                <label>Search For a City:</label>            
+                <div class="input-group mb-3">
+                  <!-- Input box with "Orlando" placeholder -->
+                  <input id="cityEntered" type="text" class="form-control" placeholder="Orlando">
+                    <div class="input-group-append">
+                        <button id='getEnteredCityWeather' class="citybtn" type="submit">
+                            <i id='getWeatherIcon' class="search" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!--past searches-->
+                      <div id='past-searches'></div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class='col-md-9 '>
+                    <div class='row'>
+                      <div class='card'>
+                        <div class='card-body'>
+                          <!-- City name loaded in JS -->
+                          <h5 class='card-title' id='cityName'>City</h5>
+                          <ul>
+                             <!-- Weather values loaded in JS -->
+                            <li><img id='currWeathIcn'></img></li>
+                            <li class='card-text' id='currTemp'>Temp:</li>
+                            <li class='card-text' id='currHum'>Humidity:</li>
+                            <li class='card-text' id='currWind'>Windspeed:</li>
+                            <li class='card-text' id='currUVI'>UV Index:</li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>   
+                  
+                  <div class='row'>
+                    <h5 class='card-title' id="fiveDayHeader">5-Day Forcast</h5>
+                </div>
+                <div class='row' id='forecast'></div>
+            </div>
+          </div>
+          
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js' integrity='sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=' crossorigin='anonymous'></script>
+          <script src='./script.js'></script>
+        
+        </body>
+        </html>
+
+
+</body>
+</html>

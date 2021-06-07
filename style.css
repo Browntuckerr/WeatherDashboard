@@ -1,0 +1,65 @@
+/* header */
+#header {
+    color: rgb(255, 255, 255);
+}
+
+ul { 
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* lists in current and forecast */
+li { 
+    font-size: 10pt;
+    padding: 5px 0px;
+}
+
+/* forecast  */
+.col { 
+    padding: 2px;
+}
+
+/* history */
+.card {
+    width: 100%;
+    background-color: #ececec;
+}
+
+/* Forecast History Card */
+.forecast-card {
+    color: white;
+    background-color:#0275d8;
+    border-radius: 5px;
+    font-size: 8pt;
+}
+
+/* search section style */
+.search-section {
+    height: 100%;
+}
+
+/* city history style*/
+.cityList {
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 2px;
+    background-color: lightgrey;
+}
+
+/* change color when hovering over history list */
+.cityList:hover {
+    background-color: #0275d8;
+    color: #fff;
+}
+
+/* five day card header */
+#fiveDayHeader {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* Overall Container */
+.container {
+    margin-top: 5px;
+  }
